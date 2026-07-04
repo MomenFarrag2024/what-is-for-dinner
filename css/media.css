@@ -1,0 +1,112 @@
+@media screen and (min-width: 991px) {
+  header .navbar-collapse ul li{
+    margin: 0 !important;
+  }
+}
+@media screen and (max-width: 1200px){
+  main .container{
+  padding: 0 !important;
+    max-width: 90%;
+}
+}
+@media screen and (max-width: 991px) {
+  h1{
+  font-size: 18px;
+}
+.navbar-brand p {
+  font-size: 12px;
+}
+header .container{
+  max-width: 100%;
+}
+main .container{
+  padding: 0 !important;
+    max-width: 100%;
+}
+      .navbar-collapse img{
+width: 32px !important;
+}
+header .navbar-collapse ul{
+  border-top:1px solid #ffedd4 ;
+  margin-top: 16px;
+  padding: 16px 0;
+}
+header .navbar-collapse ul li{
+justify-content: start;
+}
+.img-food{
+  height: 400px;
+}
+.col-lg-5{
+  height:400px !important;
+}
+.row{
+  display: block !important;
+}
+.p-food{
+  padding: 20px;
+}
+.col-lg-7{
+  height: fit-content !important;
+}
+.row{
+  height: fit-content !important;
+}
+section{
+    height: fit-content !important;
+}
+}
+@media screen and (max-width: 687px){
+  .img-food > span p,
+  .img-food > span i{
+    font-size: 14px;
+  }
+  .img-food > span span{
+    font-size: 12px;
+  }
+  .img-food > div p{
+  font-size: 12px;
+}
+.img-food > div span{
+font-size: 14px;
+}
+.img-food > div i{
+  font-size: 18px;
+}
+.img-food > div{
+  padding: 12px !important;
+}
+.top-p-food > div{
+  flex-flow: column-reverse;
+  align-items: start !important;
+  gap: 12px !important;
+}
+.btn-top{
+  align-self: end !important;
+}
+.top-p-food h2{
+  font-size: 24px;
+}
+.top-p-food p{
+  font-size: 14px;
+  line-height: 20px;
+}
+#contact-tab-pane .top-contact,
+#contact-tab-pane .middle-contact,
+#contact-tab-pane .bottom-contact{
+  flex-flow: column;
+}
+#contact-tab-pane h3{
+  font-size: 16px;
+}
+#contact-tab-pane p{
+font-size: 12px;
+}
+section .nav-item {
+  font-size: 12px;
+}
+.bottom-food button{
+  font-size: 14px;
+  padding: 8px 16px;
+}
+}
