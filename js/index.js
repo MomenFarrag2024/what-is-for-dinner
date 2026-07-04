@@ -1159,6 +1159,27 @@ for (var i =0; i < meal.tips.length; i++) {
 }
 document.getElementById("tips-tab-pane").innerHTML = cartona;
 }
+function displayWarning(meal){
+    var totalTime = parseInt(meal.prepTime) + parseInt(meal.cookTime);
+    if(totalTime > 45){
+        var cartona = `
+<div class="d-flex align-items-center rounded-2 p-3">
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    <div>
+<h3 class="mb-1">
+    Extended Preparation Time
+</h3>
+<p class="mb-0">
+    This recipe requires more than 45 minutes to prepare. Plan accordingly!
+</p>
+    </div>
+</div>
+        `;
+        document.getElementById("warningBox").innerHTML = cartona;
+    }else{
+        document.getElementById("warningBox").innerHTML = "";
+    }
+}
 function displayMeal(meal){
     displayImageSection(meal);
     displayMealInfo(meal);
@@ -1166,6 +1187,7 @@ function displayMeal(meal){
     displayInstructions(meal);
     displayNutrition(meal);
     displayTips(meal);
+    displayWarning(meal)
 }
 function randomMeal(){
     var random = Math.floor(Math.random() * meals.length);
