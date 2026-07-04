@@ -109,4 +109,13 @@ section .nav-item {
   font-size: 14px;
   padding: 8px 16px;
 }
+#warningBox > div p{
+  font-size: 12px;
+}
+#warningBox > div h3{
+  font-size: 14px;
+}
+#warningBox > div i{
+  font-size: 18px;
+}
 }
